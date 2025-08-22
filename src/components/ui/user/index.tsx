@@ -20,8 +20,8 @@ export default function UsersPage({ searchParams }: UsersPageProps) {
 
   if (error || !data) {
     return (
-      <div className="min-h-screen bg-background">
-        <header className="border-b border-border bg-card shadow-sm">
+      <div className="min-h-screen bg-white">
+        <header className="border-b border-b-gray-500 bg-card shadow-sm">
           <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between">
               <h1 className="text-3xl font-bold ">User Management</h1>
@@ -31,11 +31,11 @@ export default function UsersPage({ searchParams }: UsersPageProps) {
         </header>
 
         <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-          <div className="rounded-lg border border-destructive bg-destructive/10 p-6 text-center">
-            <h2 className="text-lg font-semibold text-destructive">
+          <div className="rounded-lg border border-destructive  p-6 text-center">
+            <h2 className="text-lg font-semibold text-red-400">
               Error Loading Users
             </h2>
-            <p className="mt-2 text-destructive/80">
+            <p className="mt-2 text-red-400">
               Failed to load user data. Please try again later.
             </p>
           </div>
