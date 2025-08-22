@@ -1,0 +1,10 @@
+/** @format */
+
+import { UserContainer } from "@/container";
+import React from "react";
+
+const UserPage = () => {
+  return <UserContainer />;
+};
+
+export default UserPage;
