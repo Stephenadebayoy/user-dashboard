@@ -116,6 +116,13 @@ function paginateUsers(users: User[], page: number, limit: number): User[] {
   return users.slice(startIndex, endIndex);
 }
 
+// --- Add a reusable CORS headers object ---
+const corsHeaders = {
+  "Access-Control-Allow-Origin": "https://user-dashboard-one-delta.vercel.app", // 👈 allow your frontend domain
+  "Access-Control-Allow-Methods": "GET, OPTIONS",
+  "Access-Control-Allow-Headers": "Content-Type, Authorization",
+};
+
 export async function GET(request: NextRequest) {
   try {
     const { searchParams } = new URL(request.url);
@@ -125,7 +132,7 @@ export async function GET(request: NextRequest) {
     if (validationErrors.length > 0) {
       return NextResponse.json(
         { error: "Invalid query parameters", details: validationErrors },
-        { status: 400 }
+        { status: 400, headers: corsHeaders }
       );
     }
 
@@ -165,6 +172,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json(response, {
       headers: {
+        ...corsHeaders,
         "Cache-Control": "public, s-maxage=60, stale-while-revalidate=30",
       },
     });
@@ -175,7 +183,12 @@ export async function GET(request: NextRequest) {
         error: "Internal server error",
         message: error instanceof Error ? error.message : "Unknown error",
       },
-      { status: 500 }
+      { status: 500, headers: corsHeaders }
     );
   }
+}
+
+// --- Handle CORS preflight requests ---
+export async function OPTIONS() {
+  return NextResponse.json({}, { headers: corsHeaders });
 }

@@ -15,29 +15,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "User Dashboard ",
-  description:
-    "Access your personalized dashboard to manage your account, track activity, view analytics, and stay updated with the latest insights.",
-  keywords: [
-    "user dashboard",
-    "account management",
-    "analytics",
-    "user profile",
-    "activity tracking",
-  ],
-  authors: [{ name: "User Dashboard" }],
+  title: "User Dashboard",
+  description: "Manage your account, settings, and activities with ease.",
+  metadataBase: new URL("https://user-dashboard-one-delta.vercel.app"),
   openGraph: {
-    title: "User Dashboard ",
+    title: "User Dashboard",
     description:
-      "Manage your account, track activities, and explore insights all in one place.",
-    url: "https://user-dashboard-one-delta.vercel.app/dashboard",
-    siteName: "",
+      "Your personalized dashboard to manage everything in one place.",
+    url: "https://user-dashboard-one-delta.vercel.app",
+    siteName: "User Dashboard",
     images: [
       {
-        url: "https://user-dashboard-one-delta.vercel.app/og-dashboard.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "User Dashboard preview",
+        alt: "User Dashboard Preview",
       },
     ],
     locale: "en_US",
@@ -45,10 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "User Dashboard | YourAppName",
-    description:
-      "Your personalized space to manage your account and track progress.",
-    images: ["https://user-dashboard-one-delta.vercel.app/og-dashboard.png"],
+    title: "User Dashboard",
+    description: "Manage your account, settings, and activities with ease.",
+    images: ["/og-image.png"],
   },
 };
 
