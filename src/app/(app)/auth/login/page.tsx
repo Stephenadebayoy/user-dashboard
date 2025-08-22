@@ -1,10 +1,14 @@
 /** @format */
 
 import { LoginContainer } from "@/container";
-import React from "react";
+import React, { Suspense } from "react";
 
 const LoginPage = () => {
-  return <LoginContainer />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <LoginContainer />;
+    </Suspense>
+  );
 };
 
 export default LoginPage;

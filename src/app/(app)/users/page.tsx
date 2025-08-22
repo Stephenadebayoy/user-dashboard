@@ -1,10 +1,14 @@
 /** @format */
 
 import { UserContainer } from "@/container";
-import React from "react";
+import React, { Suspense } from "react";
 
 const UserPage = () => {
-  return <UserContainer />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <UserContainer />
+    </Suspense>
+  );
 };
 
 export default UserPage;
