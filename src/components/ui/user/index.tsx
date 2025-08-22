@@ -14,6 +14,8 @@ interface UsersPageProps {
 export default function UsersPage({ searchParams }: UsersPageProps) {
   const { data, error, loading } = useUsers({ searchParams });
 
+  console.log("data", data);
+
   if (loading) {
     return <UserManagementSkeleton />;
   }

@@ -24,8 +24,8 @@ export function useUsers({ searchParams }: UseUsersProps) {
       if (searchParams.limit) params.set("limit", searchParams.limit as string);
 
       const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
-        ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
-        : "http://localhost:3000";
+        ? `${process.env.NEXT_PUBLIC_VERCEL_URL}`
+        : "http://localhost:3001";
 
       try {
         setLoading(true);
