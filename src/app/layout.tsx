@@ -30,11 +30,11 @@ export const metadata: Metadata = {
     title: "User Dashboard ",
     description:
       "Manage your account, track activities, and explore insights all in one place.",
-    url: "https://yourapp.com/dashboard",
-    siteName: "YourAppName",
+    url: "https://user-dashboard-one-delta.vercel.app/dashboard",
+    siteName: "",
     images: [
       {
-        url: "https://yourapp.com/og-dashboard.png",
+        url: "https://user-dashboard-one-delta.vercel.app/og-dashboard.png",
         width: 1200,
         height: 630,
         alt: "User Dashboard preview",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     title: "User Dashboard | YourAppName",
     description:
       "Your personalized space to manage your account and track progress.",
-    images: ["https://yourapp.com/og-dashboard.png"],
+    images: ["https://user-dashboard-one-delta.vercel.app/og-dashboard.png"],
   },
 };
 
