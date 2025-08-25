@@ -85,37 +85,32 @@ This ensures maintainability, reusability, and a clean separation between logic 
 ### Installation
 
 1. **Clone or download the project**
-   \`\`\`bash
+   bash
 
    # If using git
 
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/Stephenadebayoy/user-dashboard.git)
    cd user-dashboard
 
    # Or extract the downloaded ZIP file
 
-   \`\`\`
-
 2. **Install dependencies**
-   \`\`\`bash
+   bash
    npm install
 
    # or
 
    yarn install
-   \`\`\`
 
 3. **Set up environment variables**
    Create a `.env.local` file in the root directory:
-   \`\`\`env
+   env
    NEXTAUTH_SECRET=your-secret-key-here
    NEXTAUTH_URL=http://localhost:3000
-   \`\`\`
 
 4. **Install Playwright browsers** (for E2E testing)
-   \`\`\`bash
+   bash
    npx playwright install
-   \`\`\`
 
 ## 🚀 Running the Application
 
@@ -127,13 +122,11 @@ npm run dev
 # or
 
 yarn dev
-\`\`\`
 
 The application will be available at `http://localhost:3000`
 
 ### Production Build
 
-\`\`\`bash
 npm run build
 npm run start
 
@@ -141,13 +134,10 @@ npm run start
 
 yarn build
 yarn start
-\`\`\`
 
 ## 🧪 Testing
 
 ### API Tests (Jest)
-
-\`\`\`bash
 
 # Run all API tests
 
@@ -160,11 +150,8 @@ npm run test:watch
 # Run specific test file
 
 npm run test **tests**/api/users.test.ts
-\`\`\`
 
 ### E2E Tests (Playwright)
-
-\`\`\`bash
 
 # Run all E2E tests
 
@@ -180,29 +167,6 @@ npx playwright test e2e/users.spec.ts
 \`\`\`
 
 ## 🏗️ Architecture Overview
-
-### Project Structure
-
-\`\`\`
-├── app/
-│ ├── api/users/route.ts # Main API endpoint
-│ ├── auth/signin/page.tsx # Authentication page
-│ ├── users/ # Protected user management
-│ │ ├── page.tsx # Server component with data fetching
-│ │ └── user-management-client.tsx # Client component with interactivity
-│ ├── layout.tsx # Root layout with auth provider
-│ └── page.tsx # Homepage
-├── components/
-│ ├── auth-provider.tsx # NextAuth session provider
-│ ├── auth-header.tsx # User info and sign out
-│ └── ui/ # Reusable UI components
-├── lib/
-│ ├── auth.ts # NextAuth configuration
-│ └── types.ts # TypeScript type definitions
-├── **tests**/ # Jest API tests
-├── e2e/ # Playwright E2E tests
-└── middleware.ts # Route protection middleware
-\`\`\`
 
 ### Caching Strategy
 
@@ -260,7 +224,6 @@ Fetches user data from JSONPlaceholder with filtering, sorting, and pagination.
 
 #### Response Format
 
-\`\`\`json
 {
 "data": [
 {
@@ -384,14 +347,5 @@ The application is ready for deployment on Vercel or any Node.js hosting platfor
 - **Cross-browser**: Tests run on Chrome, Firefox, Safari, and mobile
 
 ## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Run the test suite
-6. Submit a pull request
-
-## 📄 License
 
 This project is created for demonstration purposes. Feel free to use it as a reference for your own projects.
