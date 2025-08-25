@@ -1,0 +1,139 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - button "Open Next.js Dev Tools" [ref=e7] [cursor=pointer]:
+    - img [ref=e8] [cursor=pointer]
+  - alert [ref=e11]
+  - generic [ref=e12]:
+    - banner [ref=e13]:
+      - generic [ref=e16]:
+        - heading "User Management" [level=1] [ref=e17]
+        - paragraph [ref=e18]: Manage and view user information from your system
+    - main [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - img [ref=e22]
+          - textbox "Search users by name or email..." [ref=e25]
+        - table [ref=e29]:
+          - rowgroup [ref=e30]:
+            - row "Name Email Phone Website" [ref=e31]:
+              - cell "Name" [ref=e32]:
+                - button "Name" [ref=e33] [cursor=pointer]
+              - cell "Email" [ref=e34]:
+                - button "Email" [ref=e35] [cursor=pointer]
+              - cell "Phone" [ref=e36]
+              - cell "Website" [ref=e37]
+          - rowgroup [ref=e38]:
+            - row "Leanne Graham @Bret Sincere@april.biz 1-770-736-8031 x56442 hildegard.org" [ref=e39]:
+              - cell "Leanne Graham @Bret" [ref=e40]:
+                - generic [ref=e41]:
+                  - generic [ref=e42]: Leanne Graham
+                  - generic [ref=e43]: "@Bret"
+              - cell "Sincere@april.biz" [ref=e44]
+              - cell "1-770-736-8031 x56442" [ref=e45]
+              - cell "hildegard.org" [ref=e46]:
+                - link "hildegard.org" [ref=e47] [cursor=pointer]:
+                  - /url: https://hildegard.org
+            - row "Ervin Howell @Antonette Shanna@melissa.tv 010-692-6593 x09125 anastasia.net" [ref=e48]:
+              - cell "Ervin Howell @Antonette" [ref=e49]:
+                - generic [ref=e50]:
+                  - generic [ref=e51]: Ervin Howell
+                  - generic [ref=e52]: "@Antonette"
+              - cell "Shanna@melissa.tv" [ref=e53]
+              - cell "010-692-6593 x09125" [ref=e54]
+              - cell "anastasia.net" [ref=e55]:
+                - link "anastasia.net" [ref=e56] [cursor=pointer]:
+                  - /url: https://anastasia.net
+            - row "Clementine Bauch @Samantha Nathan@yesenia.net 1-463-123-4447 ramiro.info" [ref=e57]:
+              - cell "Clementine Bauch @Samantha" [ref=e58]:
+                - generic [ref=e59]:
+                  - generic [ref=e60]: Clementine Bauch
+                  - generic [ref=e61]: "@Samantha"
+              - cell "Nathan@yesenia.net" [ref=e62]
+              - cell "1-463-123-4447" [ref=e63]
+              - cell "ramiro.info" [ref=e64]:
+                - link "ramiro.info" [ref=e65] [cursor=pointer]:
+                  - /url: https://ramiro.info
+            - row "Patricia Lebsack @Karianne Julianne.OConner@kory.org 493-170-9623 x156 kale.biz" [ref=e66]:
+              - cell "Patricia Lebsack @Karianne" [ref=e67]:
+                - generic [ref=e68]:
+                  - generic [ref=e69]: Patricia Lebsack
+                  - generic [ref=e70]: "@Karianne"
+              - cell "Julianne.OConner@kory.org" [ref=e71]
+              - cell "493-170-9623 x156" [ref=e72]
+              - cell "kale.biz" [ref=e73]:
+                - link "kale.biz" [ref=e74] [cursor=pointer]:
+                  - /url: https://kale.biz
+            - row "Chelsey Dietrich @Kamren Lucio_Hettinger@annie.ca (254)954-1289 demarco.info" [ref=e75]:
+              - cell "Chelsey Dietrich @Kamren" [ref=e76]:
+                - generic [ref=e77]:
+                  - generic [ref=e78]: Chelsey Dietrich
+                  - generic [ref=e79]: "@Kamren"
+              - cell "Lucio_Hettinger@annie.ca" [ref=e80]
+              - cell "(254)954-1289" [ref=e81]
+              - cell "demarco.info" [ref=e82]:
+                - link "demarco.info" [ref=e83] [cursor=pointer]:
+                  - /url: https://demarco.info
+            - row "Mrs. Dennis Schulist @Leopoldo_Corkery Karley_Dach@jasper.info 1-477-935-8478 x6430 ola.org" [ref=e84]:
+              - cell "Mrs. Dennis Schulist @Leopoldo_Corkery" [ref=e85]:
+                - generic [ref=e86]:
+                  - generic [ref=e87]: Mrs. Dennis Schulist
+                  - generic [ref=e88]: "@Leopoldo_Corkery"
+              - cell "Karley_Dach@jasper.info" [ref=e89]
+              - cell "1-477-935-8478 x6430" [ref=e90]
+              - cell "ola.org" [ref=e91]:
+                - link "ola.org" [ref=e92] [cursor=pointer]:
+                  - /url: https://ola.org
+            - row "Kurtis Weissnat @Elwyn.Skiles Telly.Hoeger@billy.biz 210.067.6132 elvis.io" [ref=e93]:
+              - cell "Kurtis Weissnat @Elwyn.Skiles" [ref=e94]:
+                - generic [ref=e95]:
+                  - generic [ref=e96]: Kurtis Weissnat
+                  - generic [ref=e97]: "@Elwyn.Skiles"
+              - cell "Telly.Hoeger@billy.biz" [ref=e98]
+              - cell "210.067.6132" [ref=e99]
+              - cell "elvis.io" [ref=e100]:
+                - link "elvis.io" [ref=e101] [cursor=pointer]:
+                  - /url: https://elvis.io
+            - row "Nicholas Runolfsdottir V @Maxime_Nienow Sherwood@rosamond.me 586.493.6943 x140 jacynthe.com" [ref=e102]:
+              - cell "Nicholas Runolfsdottir V @Maxime_Nienow" [ref=e103]:
+                - generic [ref=e104]:
+                  - generic [ref=e105]: Nicholas Runolfsdottir V
+                  - generic [ref=e106]: "@Maxime_Nienow"
+              - cell "Sherwood@rosamond.me" [ref=e107]
+              - cell "586.493.6943 x140" [ref=e108]
+              - cell "jacynthe.com" [ref=e109]:
+                - link "jacynthe.com" [ref=e110] [cursor=pointer]:
+                  - /url: https://jacynthe.com
+            - row "Glenna Reichert @Delphine Chaim_McDermott@dana.io (775)976-6794 x41206 conrad.com" [ref=e111]:
+              - cell "Glenna Reichert @Delphine" [ref=e112]:
+                - generic [ref=e113]:
+                  - generic [ref=e114]: Glenna Reichert
+                  - generic [ref=e115]: "@Delphine"
+              - cell "Chaim_McDermott@dana.io" [ref=e116]
+              - cell "(775)976-6794 x41206" [ref=e117]
+              - cell "conrad.com" [ref=e118]:
+                - link "conrad.com" [ref=e119] [cursor=pointer]:
+                  - /url: https://conrad.com
+            - row "Clementina DuBuque @Moriah.Stanton Rey.Padberg@karina.biz 024-648-3804 ambrose.net" [ref=e120]:
+              - cell "Clementina DuBuque @Moriah.Stanton" [ref=e121]:
+                - generic [ref=e122]:
+                  - generic [ref=e123]: Clementina DuBuque
+                  - generic [ref=e124]: "@Moriah.Stanton"
+              - cell "Rey.Padberg@karina.biz" [ref=e125]
+              - cell "024-648-3804" [ref=e126]
+              - cell "ambrose.net" [ref=e127]:
+                - link "ambrose.net" [ref=e128] [cursor=pointer]:
+                  - /url: https://ambrose.net
+        - generic [ref=e129]:
+          - generic [ref=e130]:
+            - generic [ref=e131]: Show
+            - combobox [ref=e132]:
+              - generic: "10"
+              - img [ref=e133]
+            - generic [ref=e135]: of 10 users
+          - generic [ref=e136]:
+            - button "Previous" [disabled]
+            - button "1" [ref=e138] [cursor=pointer]
+            - button "Next" [disabled]
+```

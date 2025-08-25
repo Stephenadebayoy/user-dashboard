@@ -27,6 +27,7 @@ const jestConfig: JestConfigWithTsJest = {
     "^@/_components(.*)$": "<rootDir>/src/_components$1",
   },
   setupFilesAfterEnv: ["@testing-library/jest-dom"],
+  testPathIgnorePatterns: ["/node_modules/", "/e2e/"],
 };
 
 export default jestConfig;

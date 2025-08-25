@@ -25,7 +25,7 @@ export function useUsers({ searchParams }: UseUsersProps) {
 
       const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
         ? `${process.env.NEXT_PUBLIC_VERCEL_URL}`
-        : "http://localhost:3001";
+        : "http://localhost:3000";
 
       try {
         setLoading(true);
