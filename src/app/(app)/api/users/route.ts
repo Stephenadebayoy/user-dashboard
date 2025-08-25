@@ -104,7 +104,7 @@ function paginateUsers(users: User[], page: number, limit: number): User[] {
 
 // --- Reusable CORS headers ---
 const corsHeaders: HeadersInit = {
-  "Access-Control-Allow-Origin": "https://user-dashboard-one-delta.vercel.app",
+  "Access-Control-Allow-Origin": "*",
   "Access-Control-Allow-Methods": "GET,OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, Authorization, Accept",
   "Access-Control-Allow-Credentials": "true",
